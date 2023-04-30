@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { Greeting } from '@/components/greeting';
+import React, { FC } from 'react'
+import { Greeting } from '@/components/greeting'
 
 const DashboardScreen: FC = () => {
   return (
@@ -13,9 +13,9 @@ const DashboardScreen: FC = () => {
         fontFamily: ' Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif',
       }}
     >
-      <Greeting name="Kujang UI 👋" />
+      <Greeting name='Kujang UI 👋' />
     </div>
-  );
-};
+  )
+}
 
-export default DashboardScreen;
+export default DashboardScreen

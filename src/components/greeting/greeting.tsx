@@ -1,11 +1,13 @@
-import React, { FC } from 'react';
+import { FC } from 'react'
+
+import Typography from '@mui/material/Typography'
 
 interface Props {
-  name: string;
+  name: string
 }
 
 const Greeting: FC<Props> = ({ name }) => {
-  return <h1>Hello {name}</h1>;
-};
+  return <Typography variant='h5'>Hello {name}</Typography>
+}
 
-export default Greeting;
+export { Greeting }
