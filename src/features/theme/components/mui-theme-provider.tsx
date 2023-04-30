@@ -22,15 +22,12 @@ interface MuiThemeProviderProps {
 const MuiThemeProvider: FC<MuiThemeProviderProps> = ({ children }) => {
   const mode = 'dark' // Hardcoded to light mode
   const theme = useMemo<Theme>(() => {
-    const palette =
-      mode === 'dark'
-        ? merge(paletteBase, paletteDark)
-        : merge(paletteBase, paletteLight)
+    const palette = mode === 'dark' ? merge(paletteBase, paletteDark) : merge(paletteBase, paletteLight)
     return createTheme({
       palette,
       typography,
       shadows,
-      components
+      components,
     })
   }, [])
 

@@ -10,8 +10,7 @@ const DashboardScreen: FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        fontFamily:
-          ' Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'
+        fontFamily: ' Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif',
       }}
     >
       <Greeting name='Kujang UI 👋' />

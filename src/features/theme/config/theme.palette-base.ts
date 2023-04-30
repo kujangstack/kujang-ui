@@ -5,14 +5,14 @@ const paletteBase: Partial<PaletteOptions> = {
     light: '#D6F2FF',
     main: '#3397FF',
     dark: '#2575DB',
-    contrastText: '#fbfbfb'
+    contrastText: '#fbfbfb',
   },
   secondary: {
     light: '#FEF3CC',
     main: '#fda105',
     dark: '#D98203',
-    contrastText: '#fbfbfb'
-  }
+    contrastText: '#fbfbfb',
+  },
 }
 
 export { paletteBase }

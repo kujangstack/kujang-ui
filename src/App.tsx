@@ -17,7 +17,7 @@ const App = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          flexDirection: 'column'
+          flexDirection: 'column',
         }}
       >
         <motion.div
@@ -25,7 +25,7 @@ const App = () => {
           transition={{
             duration: 1,
             delay: 1,
-            times: [0, 0.2]
+            times: [0, 0.2],
           }}
         >
           <Greeting name='Kujang UI' />

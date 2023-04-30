@@ -5,13 +5,13 @@ const paletteDark: PaletteOptions = {
   mode: 'dark',
   background: {
     default: grey[900],
-    paper: '#222128'
+    paper: '#222128',
   },
   text: {
     primary: grey[100],
     secondary: grey[200],
-    disabled: grey[300]
-  }
+    disabled: grey[300],
+  },
 }
 
 export { paletteDark }

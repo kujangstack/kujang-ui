@@ -5,13 +5,13 @@ const paletteLight: PaletteOptions = {
   mode: 'light',
   background: {
     default: '#f7f7f7',
-    paper: common.white
+    paper: common.white,
   },
   text: {
     primary: grey[800],
     secondary: grey[600],
-    disabled: grey[500]
-  }
+    disabled: grey[500],
+  },
 }
 
 export { paletteLight }
