@@ -20,6 +20,7 @@
     "@fontsource/plus-jakarta-sans": "^4.5.11",
     "@iconify/react": "^4.1.0",
     "@mui/icons-material": "^5.11.9",
+    "@mui/lab": "^5.0.0-alpha.128",
     "@mui/material": "^5.11.10",
     "framer-motion": "^9.0.4",
     "js-cookie": "^3.0.1",
