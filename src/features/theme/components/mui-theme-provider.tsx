@@ -20,8 +20,10 @@ interface MuiThemeProviderProps {
 }
 
 const MuiThemeProvider: FC<MuiThemeProviderProps> = ({ children }) => {
-  const mode = 'dark' // Hardcoded to light mode
+  const mode = 'light' // Hardcoded to light mode
   const theme = useMemo<Theme>(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const palette = mode === 'dark' ? merge(paletteBase, paletteDark) : merge(paletteBase, paletteLight)
     return createTheme({
       palette,

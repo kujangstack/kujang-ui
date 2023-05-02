@@ -74,8 +74,6 @@ const Image: FC<Props> = (props): JSX.Element => {
   )
 }
 
-// ----------------------------------------------------------------------
-
 function getRatio(ratio: string) {
   return {
     '4/3': 'calc(100% / 4 * 3)',

@@ -4,35 +4,12 @@ import { MuiThemeProvider } from '@/features/theme/components'
 // Mui
 import Box from '@mui/material/Box'
 
-import { motion } from 'framer-motion'
-import { Greeting } from './components/greeting'
+import { useRoutes } from 'react-router-dom'
+import { rootRoutes } from './features/app/routes'
 
 const App = () => {
-  return (
-    <MuiThemeProvider>
-      <Box
-        sx={{
-          width: '100%',
-          height: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <motion.div
-          animate={{ scale: [0, 1] }}
-          transition={{
-            duration: 1,
-            delay: 1,
-            times: [0, 0.2],
-          }}
-        >
-          <Greeting name='Kujang UI' />
-        </motion.div>
-      </Box>
-    </MuiThemeProvider>
-  )
+  const appRoutes = useRoutes(rootRoutes())
+  return <MuiThemeProvider>{appRoutes}</MuiThemeProvider>
 }
 
 export default App
