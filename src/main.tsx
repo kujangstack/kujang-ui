@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from '@/app'
 import { BrowserRouter } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
+
+import App from '@/App'
 
 // Fonts family
 import '@fontsource/plus-jakarta-sans/400.css'
@@ -16,7 +18,9 @@ import '@fontsource/plus-jakarta-sans/700-italic.css'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>
 )
